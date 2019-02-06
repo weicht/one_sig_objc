@@ -2,9 +2,11 @@ We have OneSignal integrated with our product and it works great in Android. Whe
 
 Based upon our attempts, we end up in one of two scenarios:
 
-A) flutter.tools [!] The 'Pods-Runner' target has frameworks with conflicting names: onesignal.framework.
+A)
+```flutter.tools [!] The 'Pods-Runner' target has frameworks with conflicting names: onesignal.framework.```
 
-B) In file included from /Users/weicht/devel/flutter/.pub-cache/hosted/pub.dartlang.org/onesignal-1.0.5/ios/Classes/OneSignalCategories.m:28:
+B)
+```In file included from /Users/weicht/devel/flutter/.pub-cache/hosted/pub.dartlang.org/onesignal-1.0.5/ios/Classes/OneSignalCategories.m:28:
     /Users/weicht/devel/flutter/.pub-cache/hosted/pub.dartlang.org/onesignal-1.0.5/ios/Classes/OneSignalCategories.h:28:9: fatal error: 'OneSignal/OneSignal.h' file not found
     #import <OneSignal/OneSignal.h>
             ^~~~~~~~~~~~~~~~~~~~~~~
@@ -13,7 +15,7 @@ B) In file included from /Users/weicht/devel/flutter/.pub-cache/hosted/pub.dartl
     #import <OneSignal/OneSignal.h>
             ^~~~~~~~~~~~~~~~~~~~~~~
     1 error generated.
-    
+```  
     
     
     
