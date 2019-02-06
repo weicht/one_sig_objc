@@ -29,6 +29,7 @@ Notes:
 
 4) podfile in post_install section after config.build_settings['ENABLE_BITCODE'] = 'NO'
 
-5) config.build_settings ['SWIFT_VERSION'] = '4.2'Any assistance you may be able to provide would be greatly appreciated.
+5) config.build_settings ['SWIFT_VERSION'] = '4.2'
+
 
 
