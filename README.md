@@ -1,16 +1,11 @@
-# one_sig_objc
+We have OneSignal integrated with our product and it works great in Android. When we attempt to compile/link it for iOS we get into various issues. Over the course of a week, we have searched and attempted the various steps in forums. We are able to get it to the point where it states: flutter.tools [!] The 'Pods-Runner' target has frameworks with conflicting names: onesignal.framework.
 
-A new Flutter project.
+1) we are on 1.0.3
 
-## Getting Started
+2) Followed OneSignal documentation for iOS
 
-This project is a starting point for a Flutter application.
+3) we can't remove use_frameworks! then other plugins we rely wont work.
 
-A few resources to get you started if this is your first Flutter project:
+4) podfile in post_install section after config.build_settings['ENABLE_BITCODE'] = 'NO'
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+5) config.build_settings ['SWIFT_VERSION'] = '4.2'Any assistance you may be able to provide would be greatly appreciated.
